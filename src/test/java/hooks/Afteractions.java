@@ -7,7 +7,7 @@ import utils.seleniumdriver;
 
 public class Afteractions {
 
-    @AfterSuite
+    @AfterAll
     public static void teardown(){
 
         seleniumdriver.teardown();

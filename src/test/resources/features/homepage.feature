@@ -1,9 +1,11 @@
 @Scenariooutline
 Feature: Check demo bank website
 
-  Scenario Outline:  Signup multiple users
+  Background:
     Given User launches banking demo website url
     When  User clicks on Register
+
+  Scenario Outline:  Signup multiple users
     Then  User enters "<First Name>" on the sign up form
     And   User enters "<Last Name>" lastname
     And   User enters "<Address>" address

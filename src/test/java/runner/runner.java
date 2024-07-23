@@ -9,7 +9,7 @@ import utils.seleniumdriver;
 
 
 @CucumberOptions(features = {"src/test/resources/features"},
-        glue={"stepdefs"},
+        glue={"stepdefs","hooks"},
         plugin={"pretty", "html:target/cucumber-report.html"},
         monochrome = true,
         tags="@Datatable or @Scenariooutline"
@@ -18,6 +18,8 @@ import utils.seleniumdriver;
 )
 public class runner extends AbstractTestNGCucumberTests {
 
+
+/*
  @BeforeSuite
  public void setup() {
      seleniumdriver.setupdriver();
@@ -27,7 +29,7 @@ public class runner extends AbstractTestNGCucumberTests {
     public void teardown(){
 
      seleniumdriver.teardown();
- }
+ }*/
 
 }
 
