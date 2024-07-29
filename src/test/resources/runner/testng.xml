@@ -5,6 +5,7 @@
         <classes>
 
             <class name="parallel.runner"/>
+            <class name="parallel.failedrun"/>
 
         </classes>
     </test>
