@@ -1,0 +1,26 @@
+<data>
+    <set1>
+    <FirstName>James</FirstName>
+    <LastName>Vaun</LastName>
+    <Address>10B Cross</Address>
+    <City>California</City>
+    <State>SanFransisco</State>
+    <ZipCode>1111</ZipCode>
+    <Phone>123456</Phone>
+    <SSN>2222</SSN>
+    <Username>jamestest</Username>
+    <Password>jamestest123</Password>
+</set1>
+    <set2>
+        <FirstName>David</FirstName>
+        <LastName>Test</LastName>
+        <Address>11B Cross</Address>
+        <City>Los Angeles</City>
+        <State>SanFransisco</State>
+        <ZipCode>2222</ZipCode>
+        <Phone>123456</Phone>
+        <SSN>3333</SSN>>
+        <Username>davidtest</Username>
+        <Password>davidtest123</Password>
+    </set2>
+</data>

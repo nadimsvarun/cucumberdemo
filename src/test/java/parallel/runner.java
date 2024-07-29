@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 
-@CucumberOptions(features = {"src/test/resources/features"},
+@CucumberOptions(features = {"src/test/resources/features/datafromxml.feature"},
         glue={"parallel","hooks"},
         plugin={"pretty", "html:target/cucumber-report.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true,

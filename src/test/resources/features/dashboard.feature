@@ -1,5 +1,5 @@
 @Datatable
-Feature: Bill Payment
+Feature: Register and Bill Payment
 
   Scenario: Signup
     Given User launches banking demo website url
