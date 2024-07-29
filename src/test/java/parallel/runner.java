@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 
 @CucumberOptions(features = {"src/test/resources/features"},
         glue={"parallel","hooks"},
-        plugin={"pretty", "html:target/cucumber-report.html"},
+        plugin={"pretty", "html:target/cucumber-report.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true,
         tags="@Datatable or @Scenariooutline"
 

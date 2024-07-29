@@ -31,8 +31,9 @@ public class homepage {
     public void user_enters_on_the_sign_up_form(String fname) throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
         System.out.println(pone.getregisterpageurl());
-        Assert.assertTrue(pone.getregisterpageurl().contains("https://parabank.parasoft.com/parabank/register.htm"));
+        Assert.assertTrue(pone.getregisterpageurl().contains("one"));
         pone.enter_firstname(fname);
+        //https://parabank.parasoft.com/parabank/register.htm
     }
 
     @And("User enters {string} lastname")
