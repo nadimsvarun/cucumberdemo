@@ -3,7 +3,7 @@ Feature: Check demo bank website
 
   Background:
     Given User launches banking demo website url
-    When  User clicks on Register
+    When User clicks on Register
 
   Scenario Outline:  Signup multiple users
     Then  User enters "<First Name>" on the sign up form
@@ -21,5 +21,5 @@ Feature: Check demo bank website
     And   User logs out
     Examples:
       | First Name | Last Name | Address   | City   | State | Zip Code | Phone # | SSN | Username | Password | Confirm Password|
-      | Mike       | ron      | 11th street| Ca     | SF    | 1111      | 123456 | 2222 | miketest   | miketest123  | miketest123|
-      | David      | sam      | 11th street| Ca     | SF    | 1111      | 123456 | 2222 | davidtest  | davidtest123 | davidtest123|
+      | Mark       | ron      | 11th street| Ca     | SF    | 1111      | 123456 | 2222 | marktest   | marktest123  | marktest123|
+      | Wilson     | sam      | 11th street| Ca     | SF    | 1111      | 123456 | 2222 | wilsontest  | wilsontest123 | wilsontest123|

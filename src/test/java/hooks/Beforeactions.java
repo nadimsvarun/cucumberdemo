@@ -6,7 +6,7 @@ import utils.seleniumdriver;
 
 public class Beforeactions {
 
-    @BeforeAll
+    @Before
     public static void setup(){
 
         seleniumdriver.setupdriver();

@@ -1,4 +1,4 @@
-package stepdefs;
+package parallel;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
@@ -20,10 +20,16 @@ public class dashboard {
     pageoneact pone = new pageoneact();
 
     @Given("User is on dashboard page")
-    public void userIsOnDashboardPage() {
+    public void userIsOnDashboardPage() throws InterruptedException {
 
         System.out.println("url is :"+dbact.getdashboardurl());
         Assert.assertTrue(dbact.getdashboardurl().contains("https://parabank.parasoft.com/"));
+        Thread.sleep(15);
+    }
+    @When("User clicks on Register")
+    public void userClicksOnRegister() throws InterruptedException {
+
+        pone.clickonregister();
     }
 
     @When("User clicks on Bill Pay")
@@ -82,4 +88,7 @@ public class dashboard {
         pone.confirm_password(mp.get(0).get("ConfirmPassword"));
 
     }
+
+
+
 }

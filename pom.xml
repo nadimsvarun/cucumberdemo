@@ -12,14 +12,14 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>7.16.1</version>
+            <version>7.18.1</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>7.16.1</version>
+            <version>7.18.1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
@@ -42,6 +42,12 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.14.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.10.2</version>
+            <scope>test</scope>
+        </dependency>
 
 
 
@@ -63,6 +69,8 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <parallel>tests</parallel>
+                    <threadCount>4</threadCount>
                 </configuration>
             </plugin>
         </plugins>

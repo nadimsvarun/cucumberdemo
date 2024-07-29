@@ -1,5 +1,6 @@
 package utils;
 
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,27 +14,27 @@ import java.util.Properties;
 public class seleniumdriver {
 
     private static seleniumdriver seleniumdriver;
-    private static WebDriver driver;
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
     private static WebDriverWait wait;
     public final static int TIMEOUT = 30;
     public final static  int PAGE_LOAD_TIMEOUT = 30;
 
     private seleniumdriver(){
 
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.set(new ChromeDriver());
+        driver.get().manage().window().maximize();
+        wait = new WebDriverWait(driver.get(), Duration.ofSeconds(TIMEOUT));
+        driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
 
     public static  void openpage(String url){
 
-        driver.get(url);
+        getdriver().get(url);
     }
 
     public static WebDriver getdriver(){
 
-        return driver;
+        return driver.get();
     }
 
     public static void setupdriver(){
@@ -50,14 +51,15 @@ public class seleniumdriver {
         if(driver!=null){
 
 
-            driver.quit();
+            getdriver().quit();
         }
         seleniumdriver=null;
     }
 
     public static void waitforele(WebElement ele){
 
-        wait.until(ExpectedConditions.visibilityOf(ele));
+        new WebDriverWait(driver.get(),Duration.ofSeconds(30)).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.visibilityOf(ele));
+        //wait.until(ExpectedConditions.visibilityOf(ele));
 
     }
 

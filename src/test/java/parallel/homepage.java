@@ -1,4 +1,4 @@
-package stepdefs;
+package parallel;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -18,14 +18,14 @@ public class homepage {
     public void user_launches_banking_demo_website_url() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
         seleniumdriver.openpage("https://parabank.parasoft.com/parabank/index.htm");
-        Thread.sleep(10);
+        Thread.sleep(15);
     }
 
-    @When("User clicks on Register")
-    public void userClicksOnRegister() throws InterruptedException {
-
-        pone.clickonregister();
-    }
+//    @When("User clicks on Register")
+//    public void userClicksOnRegister() throws InterruptedException {
+//
+//        pone.clickonregister();
+//    }
 
     @Then("User enters {string} on the sign up form")
     public void user_enters_on_the_sign_up_form(String fname) throws InterruptedException {

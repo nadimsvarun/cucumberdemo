@@ -1,15 +1,12 @@
-package runner;
+package parallel;
 
-import io.cucumber.java.After;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import utils.seleniumdriver;
+import org.testng.annotations.DataProvider;
 
 
 @CucumberOptions(features = {"src/test/resources/features"},
-        glue={"stepdefs","hooks"},
+        glue={"parallel","hooks"},
         plugin={"pretty", "html:target/cucumber-report.html"},
         monochrome = true,
         tags="@Datatable or @Scenariooutline"
@@ -18,18 +15,11 @@ import utils.seleniumdriver;
 )
 public class runner extends AbstractTestNGCucumberTests {
 
-
-/*
- @BeforeSuite
- public void setup() {
-     seleniumdriver.setupdriver();
- }
-
- @AfterSuite
-    public void teardown(){
-
-     seleniumdriver.teardown();
- }*/
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios() {
+        return super.scenarios();
+    }
 
 }
 
