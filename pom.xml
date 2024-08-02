@@ -66,15 +66,54 @@
             <artifactId>extent-pdf-report</artifactId>
             <version>2.12.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-cucumber -->
+        <!-- https://mvnrepository.com/artifact/net.serenity-bdd/serenity-core -->
+<!--        <dependency>-->
+<!--            <groupId>net.serenity-bdd</groupId>-->
+<!--            <artifactId>serenity-core</artifactId>-->
+<!--            <version>4.1.20</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/net.serenity-bdd/serenity-junit &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>net.serenity-bdd</groupId>-->
+<!--            <artifactId>serenity-junit</artifactId>-->
+<!--            <version>4.1.20</version>-->
+<!--        </dependency>-->
 
 
-
+<!--        <dependency>-->
+<!--            <groupId>net.serenity-bdd</groupId>-->
+<!--            <artifactId>serenity-cucumber</artifactId>-->
+<!--            <version>4.1.20</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.cucumber/cucumber-junit &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.cucumber</groupId>-->
+<!--            <artifactId>cucumber-junit</artifactId>-->
+<!--            <version>7.18.1</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/junit/junit &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>junit</groupId>-->
+<!--            <artifactId>junit</artifactId>-->
+<!--            <version>4.13.2</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.junit.vintage</groupId>-->
+<!--            <artifactId>junit-vintage-engine</artifactId>-->
+<!--            <version>5.10.3</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
     </dependencies>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <tags></tags>
     </properties>
 
     <build>
@@ -82,8 +121,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
+                <version>3.3.1</version>
                 <configuration>
+<!--                    <includes>-->
+<!--                        <include>**/serenityrunner.java</include>-->
+<!--                    </includes>-->
+
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
@@ -91,6 +134,31 @@
                     <threadCount>4</threadCount>
                 </configuration>
             </plugin>
+
+            <plugin>
+            <groupId>net.serenity-bdd.maven.plugins</groupId>
+            <artifactId>serenity-maven-plugin</artifactId>
+            <version>4.1.20</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>net.serenity-bdd</groupId>
+                        <artifactId>serenity-core</artifactId>
+                        <version>4.1.20</version>
+                    </dependency>
+                </dependencies>
+            <configuration>
+                <tags>${tags}</tags>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>serenity-reports</id>
+                    <phase>post-integration-test</phase>
+                    <goals>
+                        <goal>aggregate</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
         </plugins>
     </build>
 

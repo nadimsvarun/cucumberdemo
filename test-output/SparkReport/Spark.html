@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 29, 2024 06:21:03 pm</span></a>
+<a href="#"><span class="badge badge-primary">Aug 2, 2024 07:01:23 pm</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Scenariooutline</a><a class="dropdown-item" href="#">@Datatable</a>
+<a class="dropdown-item" href="#">@Datatable</a><a class="dropdown-item" href="#">@Scenariooutline</a>
 </ul>
 </li>
 </ul>
@@ -92,7 +92,7 @@
           <div class="test-detail">
             <p class="name">Register with data from xml</p>
             <p class="text-sm">
-              <span>6:21:04 pm</span> / <span>00:00:30:343</span>
+              <span>7:01:23 pm</span> / <span>00:00:21:751</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -101,9 +101,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Register with data from xml</h5>
-<span class='badge badge-success'>07.29.2024 6:21:04 pm</span>
-<span class='badge badge-danger'>07.29.2024 6:21:35 pm</span>
-<span class='badge badge-default'>00:00:30:343</span>
+<span class='badge badge-success'>08.02.2024 7:01:23 pm</span>
+<span class='badge badge-danger'>08.02.2024 7:01:45 pm</span>
+<span class='badge badge-default'>00:00:21:751</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -188,10 +188,258 @@
                   </div>
               </div>
             </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register and Bill Payment</p>
+            <p class="text-sm">
+              <span>7:01:23 pm</span> / <span>00:00:23:234</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register and Bill Payment</h5>
+<span class='badge badge-success'>08.02.2024 7:01:23 pm</span>
+<span class='badge badge-danger'>08.02.2024 7:01:47 pm</span>
+<span class='badge badge-default'>00:00:23:234</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Bill Payment</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.homepage.user_launches_banking_demo_website_url()">
+                <span>Given User launches banking demo website url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.dashboard.userClicksOnRegister()">
+                <span>When User clicks on Register</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.dashboard.userEntersDataIntoAllFieldsInSignup(io.cucumber.datatable.DataTable)">
+                <span>Then User enters data into all fields in signup</span>
+      <div><table class='markup-table table '><tr><td>FirstName</td><td>LastName</td><td>Address</td><td>City</td><td>State</td><td>ZipCode</td><td>Phone</td><td>SSN</td><td>Username</td><td>Password</td><td>ConfirmPassword</td></tr><tr><td>David</td><td>vaun</td><td>11th street</td><td>Ca</td><td>SF</td><td>1111</td><td>123456</td><td>2222</td><td>davidtest</td><td>davidtest123</td><td>davidtest123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.homepage.user_clicks_on_register_button()">
+                <span>And User clicks on Register button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.dashboard.userIsOnDashboardPage()">
+                <span>Then User is on dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.dashboard.user_clicks_on_bill_pay()">
+                <span>When User clicks on Bill Pay</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.dashboard.user_enters_payee_details(io.cucumber.datatable.DataTable)">
+                <span>Then User enters Payee details</span>
+      <div><table class='markup-table table '><tr><td>name</td><td>address</td><td>city</td><td>state</td><td>zipcode</td><td>phone</td><td>account</td><td>verifyaccount</td><td>amount</td><td>fromaccount</td></tr><tr><td>Brian</td><td>11th cross</td><td>sanjose</td><td>ca</td><td>1111</td><td>2222</td><td>123456</td><td>123456</td><td>10000</td><td>22222</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.dashboard.userClicksOnSendPayment()">
+                <span>And User clicks on Send Payment</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.homepage.userLogsOut()">
+                <span>And User logs out</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Signup</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.homepage.user_launches_banking_demo_website_url()">
+                <span>Given User launches banking demo website url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.dashboard.userClicksOnRegister()">
+                <span>When User clicks on Register</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.dashboard.userEntersDataIntoAllFieldsInSignup(io.cucumber.datatable.DataTable)">
+                <span>Then User enters data into all fields in signup</span>
+      <div><table class='markup-table table '><tr><td>FirstName</td><td>LastName</td><td>Address</td><td>City</td><td>State</td><td>ZipCode</td><td>Phone</td><td>SSN</td><td>Username</td><td>Password</td><td>ConfirmPassword</td></tr><tr><td>james</td><td>vaun</td><td>11th street</td><td>Ca</td><td>SF</td><td>1111</td><td>123456</td><td>2222</td><td>jamestest</td><td>jamestest123</td><td>jamestest123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="parallel.homepage.user_clicks_on_register_button()">
+                <span>And User clicks on Register button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check demo bank website</p>
+            <p class="text-sm">
+              <span>7:01:40 pm</span> / <span>00:00:24:918</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check demo bank website</h5>
+<span class='badge badge-success'>08.02.2024 7:01:40 pm</span>
+<span class='badge badge-danger'>08.02.2024 7:02:05 pm</span>
+<span class='badge badge-default'>00:00:24:918</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="34"><span class="badge log pass-bg mr-2">Pass</span>Signup multiple users</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>Signup multiple users</div>
+                  <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>Signup multiple users</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User launches banking demo website url</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User clicks on Register</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User enters "Mark" on the sign up form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "ron" lastname</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "11th street" address</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "Ca" city</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "SF" state</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "1111" zipcode</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "123456" phoneno</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "2222" ssn</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "marktest" username</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "marktest123" password</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "marktest123" confirmpassword</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User clicks on Register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User logs out</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>Signup multiple users</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -277,254 +525,6 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="5"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Register and Bill Payment</p>
-            <p class="text-sm">
-              <span>6:21:04 pm</span> / <span>00:00:24:950</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Register and Bill Payment</h5>
-<span class='badge badge-success'>07.29.2024 6:21:04 pm</span>
-<span class='badge badge-danger'>07.29.2024 6:21:29 pm</span>
-<span class='badge badge-default'>00:00:24:950</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Bill Payment</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="parallel.homepage.user_launches_banking_demo_website_url()">
-                <span>Given User launches banking demo website url</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.dashboard.userClicksOnRegister()">
-                <span>When User clicks on Register</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.dashboard.userEntersDataIntoAllFieldsInSignup(io.cucumber.datatable.DataTable)">
-                <span>Then User enters data into all fields in signup</span>
-      <div><table class='markup-table table '><tr><td>FirstName</td><td>LastName</td><td>Address</td><td>City</td><td>State</td><td>ZipCode</td><td>Phone</td><td>SSN</td><td>Username</td><td>Password</td><td>ConfirmPassword</td></tr><tr><td>David</td><td>vaun</td><td>11th street</td><td>Ca</td><td>SF</td><td>1111</td><td>123456</td><td>2222</td><td>davidtest</td><td>davidtest123</td><td>davidtest123</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.homepage.user_clicks_on_register_button()">
-                <span>And User clicks on Register button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.dashboard.userIsOnDashboardPage()">
-                <span>Then User is on dashboard page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.dashboard.user_clicks_on_bill_pay()">
-                <span>When User clicks on Bill Pay</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.dashboard.user_enters_payee_details(io.cucumber.datatable.DataTable)">
-                <span>Then User enters Payee details</span>
-      <div><table class='markup-table table '><tr><td>name</td><td>address</td><td>city</td><td>state</td><td>zipcode</td><td>phone</td><td>account</td><td>verifyaccount</td><td>amount</td><td>fromaccount</td></tr><tr><td>Brian</td><td>11th cross</td><td>sanjose</td><td>ca</td><td>1111</td><td>2222</td><td>123456</td><td>123456</td><td>10000</td><td>22222</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.dashboard.userClicksOnSendPayment()">
-                <span>And User clicks on Send Payment</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.homepage.userLogsOut()">
-                <span>And User logs out</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Signup</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="parallel.homepage.user_launches_banking_demo_website_url()">
-                <span>Given User launches banking demo website url</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.dashboard.userClicksOnRegister()">
-                <span>When User clicks on Register</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.dashboard.userEntersDataIntoAllFieldsInSignup(io.cucumber.datatable.DataTable)">
-                <span>Then User enters data into all fields in signup</span>
-      <div><table class='markup-table table '><tr><td>FirstName</td><td>LastName</td><td>Address</td><td>City</td><td>State</td><td>ZipCode</td><td>Phone</td><td>SSN</td><td>Username</td><td>Password</td><td>ConfirmPassword</td></tr><tr><td>james</td><td>vaun</td><td>11th street</td><td>Ca</td><td>SF</td><td>1111</td><td>123456</td><td>2222</td><td>jamestest</td><td>jamestest123</td><td>jamestest123</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="parallel.homepage.user_clicks_on_register_button()">
-                <span>And User clicks on Register button</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="30"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Check demo bank website</p>
-            <p class="text-sm">
-              <span>6:21:20 pm</span> / <span>00:00:11:017</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Check demo bank website</h5>
-<span class='badge badge-success'>07.29.2024 6:21:20 pm</span>
-<span class='badge badge-danger'>07.29.2024 6:21:31 pm</span>
-<span class='badge badge-default'>00:00:11:017</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Signup multiple users</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>Signup multiple users</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given User launches banking demo website url</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When User clicks on Register</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then User enters "Mark" on the sign up form</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User enters "ron" lastname</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User enters "11th street" address</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User enters "Ca" city</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User enters "SF" state</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User enters "1111" zipcode</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User enters "123456" phoneno</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User enters "2222" ssn</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User enters "marktest" username</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User enters "marktest123" password</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User enters "marktest123" confirmpassword</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then User clicks on Register button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User logs out</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
       </ul>
     </div>
   </div>
@@ -542,72 +542,6 @@
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-</span>
-<p class="name">@Scenariooutline</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Scenariooutline</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:21:04 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>Signup multiple users through data from xml</a>
-<div class="">
-<span class="badge badge-default">Register with data from xml.Signup multiple users through data from xml</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:21:04 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='4'>Signup multiple users through data from xml</a>
-<div class="">
-<span class="badge badge-default">Register with data from xml.Signup multiple users through data from xml</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:21:20 pm</td>
-<td>
-<a href="#" class="linked" test-id='30' id='32'>Signup multiple users</a>
-<div class="">
-<span class="badge badge-default">Check demo bank website.Signup multiple users</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:21:21 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='37'>Signup multiple users</a>
-<div class="">
-<span class="badge badge-default">Register with data from xml.Signup multiple users</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -632,9 +566,9 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:21:04 pm</td>
+<td>19:01:23 pm</td>
 <td>
-<a href="#" class="linked" test-id='5' id='6'>Bill Payment</a>
+<a href="#" class="linked" test-id='6' id='7'>Bill Payment</a>
 <div class="">
 <span class="badge badge-default">Register and Bill Payment.Bill Payment</span>
 </div>
@@ -642,11 +576,77 @@
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:21:04 pm</td>
+<td>19:01:23 pm</td>
 <td>
-<a href="#" class="linked" test-id='5' id='7'>Signup</a>
+<a href="#" class="linked" test-id='6' id='9'>Signup</a>
 <div class="">
 <span class="badge badge-default">Register and Bill Payment.Signup</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@Scenariooutline</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Scenariooutline</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:01:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Signup multiple users through data from xml</a>
+<div class="">
+<span class="badge badge-default">Register with data from xml.Signup multiple users through data from xml</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:01:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>Signup multiple users through data from xml</a>
+<div class="">
+<span class="badge badge-default">Register with data from xml.Signup multiple users through data from xml</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:01:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='33' id='35'>Signup multiple users</a>
+<div class="">
+<span class="badge badge-default">Check demo bank website.Signup multiple users</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:01:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='33' id='43'>Signup multiple users</a>
+<div class="">
+<span class="badge badge-default">Check demo bank website.Signup multiple users</span>
 </div>
 </td>
 </tr>
@@ -667,13 +667,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 29, 2024 06:21:03 pm</h3>
+<h3>Aug 2, 2024 07:01:23 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 29, 2024 06:21:37 pm</h3>
+<h3>Aug 2, 2024 07:02:08 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -763,7 +763,7 @@
 </div></div>
 <script>
 var timeline = {
-"Register with data from xml":30.343,"Register and Bill Payment":24.95,"Check demo bank website":11.017
+"Register with data from xml":21.751,"Register and Bill Payment":23.234,"Check demo bank website":24.918
 };
 </script>
 <div class="row">
@@ -773,16 +773,16 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Scenariooutline</td>
-<td>4</td>
+<td>@Datatable</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@Datatable</td>
-<td>2</td>
+<td>@Scenariooutline</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
